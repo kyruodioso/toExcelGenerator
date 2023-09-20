@@ -42,14 +42,19 @@ function converterSheet() {
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">${element.nombre}</h5>
+        <h5 class="card-title">${element.nombre} ${element.apellido}</h5>
         <p class="card-text">
-          This is a wider card with supporting text below as a natural lead-in to
-          additional content. This content is a little bit longer.
+          ${element.puesto}
         </p>
         <p class="card-text">
-          <small class="text-muted">${element.Provincia}</small>
+        ${element.seccion}
+      </p>
+        <p class="card-text">
+          <small class="text-muted">${element.direccion}</small>
         </p>
+        <p class="card-text">
+        <small class="text-muted">${element.telefono}</small>
+      </p>
       </div>
     </div>
   </div>
