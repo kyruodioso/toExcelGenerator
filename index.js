@@ -24,12 +24,12 @@ function converterSheet() {
 
 
         let resJson = JSON.parse(jsonOutput).map(function (sheet) {
-
+            const name= workbook.SheetNames
             let sheetTable = '';
 
-            for (let index = 0; index < sheet.PortfolioSummary.length; index++) {
-                const element = sheet.PortfolioSummary[index];
-                console.log(element)
+            for (let index = 0; index < sheet[name].length; index++) {
+                const element = sheet[name][index];
+                console.log(name)
 
                 sheetTable += `<h2>${element.__EMPTY_1}</h2>`
             }
